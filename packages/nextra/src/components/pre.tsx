@@ -15,6 +15,7 @@ export const Pre = ({
   filename?: string
   hasCopyCode?: boolean
 }): ReactElement => {
+  console.log(props, children);
   const preRef = useRef<HTMLPreElement | null>(null)
 
   const toggleWordWrap = useCallback(() => {
